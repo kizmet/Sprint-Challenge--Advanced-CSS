@@ -1,6 +1,6 @@
-.btn-div () {
-    color: @porcelain;
-    background-color: @btn-bg-color;
+.btn-div (@color, @background) {
+    color: @color;
+    background-color: @background;
     border-color: #e5e5e5;
     font-family: @default-font;
     text-shadow: none;
@@ -19,12 +19,25 @@
     border-radius: 0.28571429rem;
 
     &:hover {
-        color: @btn-bg-color;
-        background-color: @porcelain;
+        color: @background;
+        background-color: @color;
     }
 
     @media @phone {
         margin: 0;
         width: 100%;
     }
+}
+
+.footer-style(@text, @back) {
+  color: @text;
+  background: @back;
+      position: relative;
+  background: ;
+  -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  margin: 1rem 0em;
+  padding: 1em 1em;
+  border-radius: 0.28571429rem;
+  /* border: 1px solid rgba(34, 36, 38, 0.15); */
 }

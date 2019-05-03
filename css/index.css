@@ -169,7 +169,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
 }
-.logo {
+.site-header .logo {
   text-decoration: none;
   background: #F6F6F6;
   color: #454A59;
@@ -179,33 +179,34 @@ p {
   font-family: 'Russo One', sans-serif;
 }
 @media (max-width: 500px) {
-  .logo {
+  .site-header .logo {
     font-size: 3rem;
     padding: 5px;
   }
 }
-.site-nav {
+.site-header .site-nav {
   order: 2;
   background: #333;
   width: 100%;
   background: #F6F6F6;
 }
-.site-nav ul {
+.site-header .site-nav ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
   justify-content: center;
 }
-.site-nav a {
+.site-header .site-nav a {
   color: #454A59;
   font-family: 'Ubuntu', sans-serif;
   text-decoration: none;
   padding: 20px;
   display: inline-block;
+  font-size: 1.5rem;
 }
 @media (max-width: 500px) {
-  .site-nav a {
+  .site-header .site-nav a {
     padding: 10px;
   }
 }
@@ -222,14 +223,22 @@ p {
   src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
 }
 footer {
-  color: #22283B;
-  background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #23293B;
+  background: #f4f4f4;
+  position: relative;
+  background: ;
+  -webkit-box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  margin: 1rem 0em;
+  padding: 1em 1em;
+  border-radius: 0.28571429rem;
+  /* border: 1px solid rgba(34, 36, 38, 0.15); */
 }
 /* // Home Content */
 .home .intro h2 {
