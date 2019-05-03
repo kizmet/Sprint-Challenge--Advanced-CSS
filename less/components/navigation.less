@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     justify-content: center;
 
+
     .logo {
         text-decoration: none;
         background: @nav-bg;
@@ -22,7 +23,6 @@
 
     .site-nav {
         order: 2;
-        background: #333;
         width: 100%;
         background: @nav-bg;
 
@@ -41,6 +41,11 @@
             padding: 20px;
             display: inline-block;
             font-size: 1.5rem;
+            &:hover {
+                background:  @river-bend;
+                color: @nav-bg;
+
+            }
 
             @media @phone {
                 padding: 10px;
