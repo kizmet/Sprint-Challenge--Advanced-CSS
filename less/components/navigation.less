@@ -1,24 +1,25 @@
 .site-header {
-  background: @nav-bg;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+    background: @nav-bg;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .logo {
-  text-decoration: none;
+    text-decoration: none;
     background: @nav-bg;
     color: @nav-font;
-  font-size: 4rem;
-  letter-spacing: 3px;
-  padding: 10px;
-  font-family: @special-font;
-  @media @phone {
-    font-size: 3rem;
-    padding: 5px;
-  }
-  
+    font-size: 4rem;
+    letter-spacing: 3px;
+    padding: 10px;
+    font-family: @special-font;
+
+    @media @phone {
+        font-size: 3rem;
+        padding: 5px;
+    }
+
 
 }
 
@@ -26,22 +27,25 @@
     order: 2;
     background: #333;
     width: 100%;
-     background: @nav-bg;
-  ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-  }
-  a {
-    color: @nav-font;
-    font-family: @default-font;
-    text-decoration: none;
-    padding: 20px;
-    display: inline-block;
-    @media @phone {
-      padding:  10px;
+    background: @nav-bg;
+
+    ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
     }
-  }
+
+    a {
+        color: @nav-font;
+        font-family: @default-font;
+        text-decoration: none;
+        padding: 20px;
+        display: inline-block;
+
+        @media @phone {
+            padding: 10px;
+        }
+    }
 }
